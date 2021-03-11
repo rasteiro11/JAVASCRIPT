@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>jquery</title>
+	<meta charset="utf-8">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(() => {
+			console.log('conteudo div 1: ', $('#div1').html())
+			console.log('conteudo div 2: ', $('#div2').html())
+			$('#div1').html('eu sou o novo valor')
+			$('#div2').html('<strong>eu sou o novo valor</strong>')
+			$('#div2').html('<strong style="color: red">eu sou o novo valor</strong>')
+			$('#div2').text('<strong style="color: red">eu sou o novo valor</strong>')
+		})
+	</script>
+</head>
+<body>
+	<div id="div1" style="border:solid 1px #000; width: 150px; height: 150px;"><a href="#">teste</a>
+		<p>Esse e outro teste</p>
+		Texto
+		<div>Outro teste</div>
+	</div>
+	<div id="div2" style="border:solid 1px #000; width: 150px; height: 150px;">Div 2</div>
+</body>
+	
+</html>

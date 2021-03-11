@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>inicializando jquery</title>
+		<meta charset="utf-8">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	</head>
+		<body>
+			<input class="exemplo1" type="text" placeholder="input 1" />
+			<input type="text" placeholder="input 1" />
+			<input type="text" placeholder="input 1" />
+
+			<div class="exemplo1">div 1</div>
+			<div>div 2</div>
+			<div>div 3</div>
+
+			<ul class="lista1">
+				<li class="exemplo2">opcao 1</li>
+				<li class="exemplo2">opcao 2</li>
+				<li>opcao 3</li>
+			</ul>
+			<ul class="lista1">
+				<li class="exemplo2">opcao 1</li>
+				<li class="exemplo2">opcao 2</li>
+				<li>opcao 3</li>
+			</ul>
+		</body>
+	<script>
+		//combinacao de seletores
+			//selecionar elementos por classe de tag especifica
+			//console.log($('.exemplo1'))
+			//console.log($('div.exemplo1'))
+
+			//selecionar elementos por classe de classe especifica
+			//console.log($('.lista1.exemplo2'))
+			//console.log($('ul.lista1 .exemplo2'))
+			
+									
+		//atuacao sobre o array de retorno dos elementos selecionados
+		console.log($('.lista1 .exemplo2'))
+		console.log($('.lista1 .exemplo2:first'))
+		console.log($('.lista1 .exemplo2:last'))
+		console.log($('.lista1 .exemplo2:even'))
+		console.log($('.lista1 .exemplo2:odd'))
+
+
+	</script>
+</html>
